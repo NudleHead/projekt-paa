@@ -24,6 +24,8 @@ app.use(views(__dirname + '/views', {
   extension: 'pug'
 }))
 
+require('./store').init()
+
 // logger
 app.use(async (ctx, next) => {
   const start = new Date()
