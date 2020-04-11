@@ -17,3 +17,9 @@ block content
 block content
   h1  WSB 
   p Hello {World}
+  table
+    tr
+      th(scope= "col") Tytuł
+    each task in tasks
+      tr
+        td= task.title
